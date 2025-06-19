@@ -1,0 +1,50 @@
+# Configuração do Site
+title: "Luzes do Abismo"
+description: "Análises técnicas e relatórios sobre avistamentos de OVNIs no Brasil e América do Sul"
+baseurl: ""
+url: "https://SEU_USUARIO.github.io"
+
+# Autor
+author:
+  name: "Luzes POA"
+  email: "maxximus.meridius@gmail.com"
+  youtube: "https://www.youtube.com/@LuzesAbismo"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+
+# Analytics (adicione seu código do Google Analytics se tiver)
+google_analytics: ""
+
+# Timezone
+timezone: America/Sao_Paulo
+
+# Encoding
+encoding: utf-8
+
+# Exclude
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
