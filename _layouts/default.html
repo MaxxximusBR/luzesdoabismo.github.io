@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- SEO -->
+    {% seo %}
+    
+    <!-- Feed -->
+    {% feed_meta %}
+</head>
+<body>
+    <div class="site-container">
+        <!-- Header -->
+        <header class="site-header">
+            <nav class="site-nav">
+                <div class="nav-container">
+                    <a href="{{ '/' | relative_url }}" class="site-title">
+                        🛸 {{ site.title }}
+                    </a>
+                    <div class="nav-links">
+                        <a href="{{ '/' | relative_url }}">Início</a>
+                        <a href="{{ '/arquivo' | relative_url }}">Arquivo</a>
+                        <a href="{{ site.author.youtube }}" target="_blank">YouTube</a>
+                        <a href="mailto:{{ site.author.email }}">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="site-content">
+            {{ content }}
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <p>&copy; {{ 'now' | date: "%Y" }} Luzes POA 2022 - Todos os direitos reservados</p>
+                <p>Contato: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+                <p><a href="{{ site.author.youtube }}" target="_blank">🎥 Canal YouTube</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Analytics -->
+    {% if site.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+</body>
+</html>
