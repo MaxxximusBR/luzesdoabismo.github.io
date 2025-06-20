@@ -8,7 +8,7 @@ region: "Teste, Brasil"
 total_sightings: 100
 south_america_sightings: 25
 brazil_sightings: 15
-categories: [teste]
+categories: []
 tags: [primeiro-post, teste, configuracao]
 ---
 
