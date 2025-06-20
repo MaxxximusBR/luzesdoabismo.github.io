@@ -3,6 +3,9 @@ description: "Análises técnicas sobre avistamentos de OVNIs no Brasil e Améri
 baseurl: ""
 url: "https://MaxxxxmusRJ.github.io"
 
+# Force rebuild
+updated: 2025-06-02
+
 author:
   name: "Luzes POA"
   email: "maxximus.meridius@gmail.com"
