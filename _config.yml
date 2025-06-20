@@ -1,7 +1,7 @@
 title: "Luzes do Abismo"
 description: "Análises técnicas sobre avistamentos de OVNIs no Brasil e América do Sul"
 baseurl: ""
-url: "https://MaxxxmusRJ.github.io"
+url: "https://MaxxxxmusRJ.github.io"
 
 author:
   name: "Luzes POA"
@@ -15,3 +15,12 @@ plugins:
   - jekyll-sitemap
 
 timezone: America/Sao_Paulo
+
+# Custom CSS
+minima:
+  skin: dark
+  
+# Override CSS
+sass:
+  style: compressed
+
