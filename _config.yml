@@ -1,20 +1,10 @@
 title: "Luzes do Abismo"
-description: "Análises técnicas sobre avistamentos de OVNIs no Brasil e América do Sul"
+description: "Análises técnicas sobre OVNIs"
 baseurl: ""
 url: "https://MaxxxxmusRJ.github.io"
 
-author:
-  name: "Luzes POA"
-  email: "maxximus.meridius@gmail.com"
-  youtube: "https://www.youtube.com/@LuzesAbismo"
-
 markdown: kramdown
 theme: minima
+
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
-
-timezone: America/Sao_Paulo
-
-# Permalink simples
-permalink: /:title/
