@@ -6,6 +6,17 @@ url: "https://MaxxxxmusRJ.github.io"
 # Force rebuild
 updated: 2025-06-02
 
+# Posts configuration
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Build settings
+future: true
+
 author:
   name: "Luzes POA"
   email: "maxximus.meridius@gmail.com"
