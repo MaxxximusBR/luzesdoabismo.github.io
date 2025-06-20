@@ -3,20 +3,6 @@ description: "Análises técnicas sobre avistamentos de OVNIs no Brasil e Améri
 baseurl: ""
 url: "https://MaxxxxmusRJ.github.io"
 
-# Force rebuild
-updated: 2025-06-02
-
-# Posts configuration
-permalink: /:year/:month/:day/:title/
-
-# Collections
-collections:
-  posts:
-    output: true
-
-# Build settings
-future: true
-
 author:
   name: "Luzes POA"
   email: "maxximus.meridius@gmail.com"
@@ -30,11 +16,5 @@ plugins:
 
 timezone: America/Sao_Paulo
 
-# Custom CSS
-minima:
-  skin: dark
-  
-# Override CSS
-sass:
-  style: compressed
-
+# Permalink simples
+permalink: /:title/
